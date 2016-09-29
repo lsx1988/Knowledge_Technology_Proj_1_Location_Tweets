@@ -1,0 +1,35 @@
+-Project		: Approximate String Search for Geolocation of Tweets
+-
+-Author			: Shixun Liu 766799
+-
+-Date			: 23/8/2016
+-
+-Files			: BISIM.java
+-                 withinNgram.java          
+-		  	      GED.java
+-		  	      LevenshteinDis.java
+-		  	      Tree.java
+-		  	      Node.java
+-                 ProcessLocatoinList.java
+-                 ProcessTweet.java
+-                 Test_BISIM.java
+-                 Test_GED.java
+-
+-Usage			: 1) BISIM.java:
+-			         Calculate the similarity between two given strings
+-			      2) withinNgram.java
+-			         Calculate the similarity between two given n-grams, utilized by BISIM.java
+-			      3) GED.py
+-			         Calculate the Global Edit Distance between two given strings
+-			      4) LevenshteinDis.java
+-                    Calculate the Levenshtein Distance between two given strings
+-			      5) Tree.java + Node.java
+-		  	         Create a tree structure. Insert each location name into a node based on its levenshtein distance with the string at root
+-			      6) ProcessLocatoinList.java + ProcessTweet.java
+-			         Pre-process Location list file and tweet file per regex
+-                    The US-loc-names.txt and tweet.txt should be in same folder named geonames. These two .java files should be in a parallel folder with geonames 
+-                 7) Test_BISIM.java
+-                    Get the approximate string based on BISIM method
+-                 8) Test_GED.java
+-                    Get the approximate string based on GED method
+
